@@ -13,5 +13,5 @@ digit = x_train[index]  # Extract the digit image
 plt.figure(figsize=(5, 5))
 plt.imshow(digit, cmap='gray')
 plt.title("2D Visualization of MNIST Digit '5' (Before Reshaping)")
-plt.axis('off')  # Hide axis for better visualization
+plt.axis('on')  # Hide axis for better visualization
 plt.show()

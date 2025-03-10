@@ -30,7 +30,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # 6️) Train Model
-history = model.fit(x_train, y_train, epochs=10, validation_data=(x_test, y_test))
+model.fit(x_train, y_train, epochs=10, validation_data=(x_test, y_test))
 
 # 7️) Evaluate Model
 test_loss, test_acc = model.evaluate(x_test, y_test)

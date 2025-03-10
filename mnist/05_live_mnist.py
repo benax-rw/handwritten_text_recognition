@@ -32,7 +32,7 @@ if not cap or not cap.isOpened():
     exit()
 
 # Define ROI coordinates (larger area for better accuracy)
-ROI_X, ROI_Y, ROI_WIDTH, ROI_HEIGHT = 50, 50, 1000, 1000
+ROI_X, ROI_Y, ROI_WIDTH, ROI_HEIGHT = 50, 50, 600, 600
 
 while True:
     ret, frame = cap.read()
