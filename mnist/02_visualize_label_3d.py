@@ -7,7 +7,7 @@ import tensorflow as tf
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
 
 # Find an image with label '5'
-index = np.where(y_train == 4)[0][0]  # Get the first occurrence of label 5
+index = np.where(y_train == 8)[0][0]  # Get the first occurrence of label 8
 digit = x_train[index]  # Extract the digit image
 
 # Normalize the grayscale image (0-1)
@@ -24,7 +24,7 @@ X, Y = np.meshgrid(range(28), range(28))
 ax.plot_surface(X, 28 - Y, normalized_digit, cmap='gray', edgecolor='k')
 
 # Labels and title
-ax.set_title("3D Visualization of MNIST Digit '4'")
+ax.set_title("3D Visualization of MNIST Digit '8'")
 ax.set_xlabel("Width (Pixels)")
 ax.set_ylabel("Height (Pixels)")
 ax.set_zlabel("Pixel Intensity (0-1)")
